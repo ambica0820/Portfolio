@@ -55,3 +55,19 @@ section {
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border-radius: 50%;
+        transition: 0.3s ease;
+
+}
+
+
+
+img:hover{
+    transform: scale(1.05);
+}
