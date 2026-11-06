@@ -1,22 +1,24 @@
 body {
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #dbeafe, #f5f3ff);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
     color: #333;
 }
-
 /* Main heading */
 h1 {
     color: #1e3a8a;
     text-align: center;
-    font-size: 40px;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
 /* Section headings */
 h2 {
     color: #1e3a8a;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #dbeafe;
+    padding-bottom: 8px;
 }
 
 /* Paragraphs */
@@ -27,47 +29,107 @@ p {
 }
 
 /* Navigation */
-nav {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px;
-    border-radius: 10px;
-}
-
 nav a {
     text-decoration: none;
-    color: #1e3a8a;
+    color: red;
     font-weight: bold;
+    transition: 0.3s ease;
+    background-color: pink;
+    font-size: 25px;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin: 5px;
 }
 
 nav a:hover {
-    color: #2563eb;
+    color: green;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* Sections */
 section {
-    background-color: white;
-    padding: 25px;
+    background-color: lightpink;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+img {
+    display: block;
     margin: 20px auto;
-    max-width: 800px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-img{
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
     width: 200px;
+    max-width: 100%;
+    height: auto;
     border-radius: 50%;
-        transition: 0.3s ease;
-
+    border: 5px solid #1e3a8a;
+    transition: 0.3s ease;
 }
-
-
 
 img:hover{
     transform: scale(1.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 15px;
+    text-align: left;
+    font-weight: 800;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f8fafc;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+
+section {
+    background-color: lightpink;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.table-container {
+    overflow-x: auto;
 }
